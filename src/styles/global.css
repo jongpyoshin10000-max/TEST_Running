@@ -1,0 +1,190 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Noto Sans KR", "Segoe UI", sans-serif;
+  background: #f6f7fb;
+  color: #1b1f24;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+input,
+button,
+select {
+  font: inherit;
+}
+
+.page {
+  padding: 24px;
+}
+
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
+}
+
+.grid {
+  display: grid;
+  gap: 16px;
+}
+
+.route-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.route-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.route-item:last-child {
+  border-bottom: none;
+}
+
+.button-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.primary-button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+}
+
+.secondary-button {
+  background: #e2e8f0;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+}
+
+.danger-button {
+  background: #fee2e2;
+  border: none;
+  color: #b91c1c;
+  padding: 8px 14px;
+  border-radius: 8px;
+}
+
+.map-container {
+  height: 60vh;
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.panel {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 6px 16px rgba(15, 23, 42, 0.08);
+}
+
+.panel h3 {
+  margin-top: 0;
+}
+
+.inline-field {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: #f1f5f9;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.control-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+.slider {
+  width: 100%;
+}
+
+.keypoint-list {
+  max-height: 220px;
+  overflow-y: auto;
+  margin-top: 12px;
+}
+
+.keypoint-item {
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.keypoint-item.active {
+  border-color: #2563eb;
+  background: #eff6ff;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.table th,
+.table td {
+  text-align: left;
+  padding: 6px 8px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.notice {
+  color: #dc2626;
+  margin-top: 8px;
+}
+
+@media (max-width: 900px) {
+  .layout-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.layout-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 2fr 1fr;
+}
